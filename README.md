@@ -1,6 +1,6 @@
 ## Federal Discord Bot
 
-[![Stories in Ready][WaffleShield]][WaffleDash]
+[Important Configuration Information](https://github.com/starcraftman/EliteBot/wiki/Private-Config)
 
 ### Motivation
 
