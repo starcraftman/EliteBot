@@ -2,6 +2,18 @@
 
 [![Stories in Ready][WaffleShield]][WaffleDash]
 
+### Motivation
+
+Some people might find this an interesting project to read. Haven't worked on it extensively in a bit.
+Some things are great, some are mistakes.  I need to give it some love that it dearly needs.
+This bot is built on the back of python async/discord.py and SQLAlchemy (mysql).
+
+Essentially this bot is used to manage objectives for an Elite Dangerous faction. It was written by me with
+assistance from a few others. It integrates with Google Sheets API, EDDB data, a local DB and has some work toward
+running a local copy of EDDB.io.
+
+The only thing missing is the secret data/config.yml, I'll make a wiki entry to cover that. Holds tokens/secrets.
+
 ### Overview
 
 This bot is designed to facilitate Powerplay for the federal forces.
@@ -103,18 +115,23 @@ python setup.py clean
 
 #### Running Tests
 
-*Full Test Suite*
+For those new to tox/pytest.
+
+**Full Test Suite**
+
 ```
 tox
 ```
 
 **Only Tests Matching A String**
+
 If `py.test` not available on the command line, do `python -m pytest`.
 ```
 py.test -k test_inara
 ```
 
 **Run Parts Of Tox**
+
 Tox runs 3 tests on code base. Pytest for unit tests, pylint and flake8 for static linting.
 The last two can't fail, some errors I ignore especially some linting problems in 'tests/'
 ```
